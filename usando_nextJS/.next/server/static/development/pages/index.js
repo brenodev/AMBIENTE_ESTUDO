@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1927,9 +1927,9 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/users.js":
+/***/ "./pages/index.js":
 /*!************************!*\
-  !*** ./pages/users.js ***!
+  !*** ./pages/index.js ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1938,80 +1938,60 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _src_hocs_withAnalytics__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/hocs/withAnalytics */ "./src/hocs/withAnalytics.js");
-var _jsxFileName = "/home/breno-lopes/workspace/ESTUDOS/AMBIENTE_ESTUDO/usando_nextJS/pages/users.js";
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _src_hocs_withAnalytics__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/hocs/withAnalytics */ "./src/hocs/withAnalytics.js");
+var _jsxFileName = "/home/breno-lopes/workspace/ESTUDOS/AMBIENTE_ESTUDO/usando_nextJS/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 
-
-const Users = ({
-  users
-}) => {
+const Home = () => {
   return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: undefined
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: undefined
-  }, __jsx("title", {
+  }, "Home")), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 14
     },
     __self: undefined
-  }, "Usu\xE1rios")), __jsx("ul", {
+  }, "Page Home"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/users",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: undefined
-  }, users.map(user => __jsx("li", {
-    key: user.id,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: undefined
-  }, user.login))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 16
     },
     __self: undefined
-  }, "Voltar para Home Page")));
+  }, "Page Users")));
 };
 
-Users.getInitialProps = async () => {
-  const response = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('https://api.github.com/orgs/rocketseat/members');
-  console.log(response.data);
-  return {
-    users: response.data
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(_src_hocs_withAnalytics__WEBPACK_IMPORTED_MODULE_4__["default"])()(Users));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_src_hocs_withAnalytics__WEBPACK_IMPORTED_MODULE_3__["default"])()(Home));
 
 /***/ }),
 
@@ -2062,26 +2042,15 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!******************************!*\
-  !*** multi ./pages/users.js ***!
+  !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/breno-lopes/workspace/ESTUDOS/AMBIENTE_ESTUDO/usando_nextJS/pages/users.js */"./pages/users.js");
+module.exports = __webpack_require__(/*! /home/breno-lopes/workspace/ESTUDOS/AMBIENTE_ESTUDO/usando_nextJS/pages/index.js */"./pages/index.js");
 
-
-/***/ }),
-
-/***/ "axios":
-/*!************************!*\
-  !*** external "axios" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("axios");
 
 /***/ }),
 
@@ -2273,4 +2242,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=users.js.map
+//# sourceMappingURL=index.js.map
