@@ -1,7 +1,7 @@
-axios.get('https://api.github.com/users/brenodev')
-  .then(function(response) {
-    console.log(response)
-  })
-  .catch(function(error){
-    console.log(error)
-  })
+axios.get('https://api.github.com/users/brenogsouza')
+    .then(function(response) {
+        console.log(response)
+    })
+    .catch(function(error) {
+        console.log(error)
+    })
