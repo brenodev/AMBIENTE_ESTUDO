@@ -1,8 +1,14 @@
 import React from 'react'
+import Link from "next/link"
 
 const Home = () => {
     return (
-        <h1>Ola mundo</h1>
+        <div>
+            <h1>Page Home</h1>
+            <Link href='/users'>
+                <a>Page Users</a>
+            </Link>
+        </div>
     )
 }
 

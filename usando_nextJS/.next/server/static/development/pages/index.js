@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1894,9 +1894,9 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./src/pages/users.js":
+/***/ "./src/pages/index.js":
 /*!****************************!*\
-  !*** ./src/pages/users.js ***!
+  !*** ./src/pages/index.js ***!
   \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1905,86 +1905,55 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/breno-lopes/workspace/ESTUDOS/AMBIENTE_ESTUDO/usando_nextJS/src/pages/users.js";
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/home/breno-lopes/workspace/ESTUDOS/AMBIENTE_ESTUDO/usando_nextJS/src/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
-const Users = ({
-  users
-}) => {
+const Home = () => {
   return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: undefined
-  }, __jsx("ul", {
+  }, "Page Home"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/users",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: undefined
-  }, users.map(user => __jsx("li", {
-    key: user.id,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }, user.login))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 9
     },
     __self: undefined
-  }, "Voltar para Home Page")));
+  }, "Page Users")));
 };
 
-Users.getInitialProps = async () => {
-  const response = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('https://api.github.com/orgs/rocketseat/members');
-  console.log(response.data);
-  return {
-    users: response.data
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Users);
+/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!**********************************!*\
-  !*** multi ./src/pages/users.js ***!
+  !*** multi ./src/pages/index.js ***!
   \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/breno-lopes/workspace/ESTUDOS/AMBIENTE_ESTUDO/usando_nextJS/src/pages/users.js */"./src/pages/users.js");
+module.exports = __webpack_require__(/*! /home/breno-lopes/workspace/ESTUDOS/AMBIENTE_ESTUDO/usando_nextJS/src/pages/index.js */"./src/pages/index.js");
 
-
-/***/ }),
-
-/***/ "axios":
-/*!************************!*\
-  !*** external "axios" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("axios");
 
 /***/ }),
 
@@ -2154,4 +2123,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=users.js.map
+//# sourceMappingURL=index.js.map
