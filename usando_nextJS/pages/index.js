@@ -12,6 +12,10 @@ const Home = () => {
                 </title>
             </Head>
             <h1>Page Home</h1>
+            <div>
+                <img src="/static/guaxinim.jpeg" alt="guaxinim" />
+                <img src="/static/panda.jpeg" alt="panda" />
+            </div>
             <Link href='/users'>
                 <a>Page Users</a>
             </Link>

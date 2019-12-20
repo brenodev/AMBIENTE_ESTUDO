@@ -1975,17 +1975,39 @@ const Home = () => {
       lineNumber: 14
     },
     __self: undefined
-  }, "Page Home"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/users",
+  }, "Page Home"), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: undefined
-  }, __jsx("a", {
+  }, __jsx("img", {
+    src: "/static/guaxinim.jpeg",
+    alt: "guaxinim",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
+    },
+    __self: undefined
+  }), __jsx("img", {
+    src: "/static/panda.jpeg",
+    alt: "panda",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  })), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/users",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
     },
     __self: undefined
   }, "Page Users")));
