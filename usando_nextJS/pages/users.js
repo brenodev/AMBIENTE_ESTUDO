@@ -15,7 +15,10 @@ const Users = ({ users }) => {
             <ul>
                 {
                     users.map(user => (
-                        <li key={user.id}>{user.login}</li>
+                        <li key={user.id}>
+                            {user.login}
+                        <Link href={`/users/${user.login}`}><a>Ver perfil</a></Link>
+                        </li>
                     ))
                 }
             </ul>
@@ -28,7 +31,7 @@ const Users = ({ users }) => {
 
 Users.getInitialProps = async () => {
     const response = await axios.get(
-        'https://api.github.com/orgs/rocketseat/members'
+        'https://api.github.com/users'
     )
     console.log(response.data)
     return { users: response.data };
