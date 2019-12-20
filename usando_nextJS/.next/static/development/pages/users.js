@@ -11342,7 +11342,7 @@ Users.getInitialProps = function _callee() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!****************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fusers&absolutePagePath=%2Fhome%2Fbreno-lopes%2Fworkspace%2FESTUDOS%2FAMBIENTE_ESTUDO%2Fusando_nextJS%2Fsrc%2Fpages%2Fusers.js ***!
   \****************************************************************************************************************************************************************************/
@@ -11365,5 +11365,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=users.js.map
