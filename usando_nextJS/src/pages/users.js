@@ -1,10 +1,16 @@
 import React from 'react';
 import axios from "axios"
 import Link from "next/link"
+import Head from "next/head"
 
 const Users = ({ users }) => {
     return (
         <div>
+            <Head>
+                <title>
+                    Usuários
+                </title>
+            </Head>
             <ul>
                 {
                     users.map(user => (
@@ -13,7 +19,7 @@ const Users = ({ users }) => {
                 }
             </ul>
             <Link href='/'>
-            <a>Voltar para Home Page</a>
+                <a>Voltar para Home Page</a>
             </Link>
         </div>
     )
@@ -25,7 +31,7 @@ Users.getInitialProps = async () => {
     )
     console.log(response.data)
     return { users: response.data };
-    
+
 }
 
 export default Users;

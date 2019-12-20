@@ -17,9 +17,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
 
 var _jsxFileName = "/home/breno-lopes/workspace/ESTUDOS/AMBIENTE_ESTUDO/usando_nextJS/src/pages/users.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
@@ -29,13 +32,25 @@ var Users = function Users(_ref) {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
-  }, __jsx("ul", {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, "Usu\xE1rios")), __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
     },
     __self: this
   }, users.map(function (user) {
@@ -43,7 +58,7 @@ var Users = function Users(_ref) {
       key: user.id,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 17
       },
       __self: this
     }, user.login);
@@ -51,13 +66,13 @@ var Users = function Users(_ref) {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 21
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 22
     },
     __self: this
   }, "Voltar para Home Page")));
@@ -74,7 +89,7 @@ Users.getInitialProps = function _callee() {
 
         case 2:
           response = _context.sent;
-          console.log(respose.data);
+          console.log(response.data);
           return _context.abrupt("return", {
             users: response.data
           });
@@ -92,4 +107,4 @@ Users.getInitialProps = function _callee() {
 /***/ })
 
 })
-//# sourceMappingURL=users.js.ead3b1ac338955686ae5.hot-update.js.map
+//# sourceMappingURL=users.js.108bd2c76dbffa56ac76.hot-update.js.map
