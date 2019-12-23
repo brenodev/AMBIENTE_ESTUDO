@@ -2,6 +2,13 @@ import React from 'react'
 import Link from "next/link"
 import Head from "next/head"
 import withAnalytics from "../src/hocs/withAnalytics"
+import styled from "styled-components";
+
+const Title = styled.h1`
+    color: #069;
+    font-size: 40px;
+    text-align: center;
+`;
 
 const Home = () => {
     return (
@@ -11,7 +18,7 @@ const Home = () => {
                     Home
                 </title>
             </Head>
-            <h1>Page Home</h1>
+            <Title>Page Home</Title>
             <div>
                 <img src="/static/guaxinim.jpeg" alt="guaxinim" width="200" height="150"/>
                 <img src="/static/panda.jpeg" alt="panda" width="200" height="150"/>
