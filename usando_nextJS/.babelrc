@@ -1,10 +1,21 @@
 {
-  "presets": ["next/babel"],
+  "presets": [
+    "next/babel"
+  ],
   "plugins": [
-    ["babel-plugin-styled-components", {
-      "ssr": true, // server side render
-      "displayName": true,
-      "preprocess": false
-    }]
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true, // server side render
+        "displayName": true,
+        "preprocess": false
+      }
+    ],
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathSuffix": "src" // para definir as paths com o "~"
+      }
+    ]
   ]
 }
