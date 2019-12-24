@@ -7,7 +7,15 @@ class TechList extends Component {
     techs: []
   };
   // executado assim que o componente aparece em tela
-  componentDidMount(){}
+  componentDidMount(){
+    const techs = localStorage.getItem('techs')
+    // se existir algo em techs busco o valor e converto para json
+    if(techs) {
+      this.setState({
+        techs: JSON.parse(techs)
+      })
+    }
+  }
   /* executado sempre que houver alterações nas props ou no estado, pois ele recebe as props
   antigas e o estado antigo com prevProps e prevState como parametros*/
   componentDidUpdate(_, prevState){
